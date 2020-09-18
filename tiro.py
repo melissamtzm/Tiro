@@ -40,10 +40,10 @@ def move():
         targets.append(target)
 
     for target in targets: #Aquí se marca la velocidad de las pelotas azules
-        target.x -= 0.5
+        target.x -= 1.5 #Se cambió de 0.5 a 1.5 para aumentar su velocidad
 
     if inside(ball): #Velocidad en la pelotita roja
-        speed.y -= 0.35
+        speed.y -= 0.05 #Se cambió de 0.35 a 0.05 para aumentar su velocidad
         ball.move(speed)
 
     dupe = targets.copy()

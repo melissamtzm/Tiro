@@ -54,10 +54,10 @@ def move():
             targets.append(target)
 
     draw()
-
-    for target in targets: #Si llega una pelota azul llega al otro extremo, se termina el juego
-        if not inside(target):
-            return
+    #El siguiente for se omitió para que el juego no terminara cuando las pelotas azules llegan al otro extremo
+    #for target in targets: #Si llega una pelota azul llega al otro extremo, se termina el juego
+        #if not inside(target):
+            #return 
 
     ontimer(move, 50)
 
